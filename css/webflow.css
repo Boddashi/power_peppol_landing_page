@@ -1116,7 +1116,7 @@ textarea.w-select {
   color: #0082f3;
 }
 .w-dropdown-link:focus {
-  outline: 0;
+  outline: 0; 
 }
 @media screen and (max-width: 767px) {
   .w-nav-brand {
@@ -1565,7 +1565,6 @@ textarea.w-select {
 }
 .w-nav {
   position: relative;
-  background: #dddddd;
   z-index: 1000;
 }
 .w-nav:before,
