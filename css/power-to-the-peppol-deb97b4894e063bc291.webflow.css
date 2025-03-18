@@ -102,7 +102,7 @@
   position: static;
 }
 
-.f-navigation-button {
+.button {
   border: 1px solid var(--_cf---flowui-component-library--green);
   background-color: var(--_cf---flowui-component-library--green);
   outline-offset: 0px;
@@ -2560,10 +2560,4 @@
 
 #w-node-abc98087-dead-4bcc-5734-52512074a34e-36483e61 {
   justify-self: end;
-}
-
-@media screen and (max-width: 991px) {
-  #w-node-_44032aa2-3ec7-d1da-7fde-5f2375ff77be-36483e61, #w-node-bb87fb35-33e7-5c16-95f3-9764e7ceb509-36483e61, #w-node-_9e32d367-918e-5731-62f1-47ed1988879a-36483e61, #w-node-abc98087-dead-4bcc-5734-52512074a33d-36483e61 {
-    order: -9999;
-  }
 }

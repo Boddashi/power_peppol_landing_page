@@ -1,0 +1,358 @@
+{}
+
+main{
+    margin: auto;
+    padding: 10%;
+    padding-top: 0px;
+    place-content: center;
+    place-items: center;
+}
+h1{
+ font-weight: 600 !important;   
+}
+
+p{
+    font-weight: 600 !important;   
+    font-size: 20px;
+
+}
+
+
+.nav {
+    /* Use your own image path: e.g. "images/bg.jpg" */
+    background-size: cover;         /* Ensures the image covers the nav area fully */
+    background-position: center;    /* Centers the image */
+    background-repeat: no-repeat;   /* Prevents the image from repeating */
+    /* Optional: set a minimum height so the background is visible */
+    min-height: 100px;
+  }
+
+  /* menü */
+.nav-img {
+    position: absolute; /* A kép a menü mögött helyezkedik el */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12%;
+    border-radius: 0px;
+    z-index: -1;
+    object-fit: cover; /* A kép nem torzul, és kitölti a menü területét */
+    z-index: 0; /* A kép a menü mögött jelenik meg */
+  }
+  
+  /* Menü elemek stílusai */
+  .nav-container{
+    padding-left: 3%;
+    padding-right: 3%;
+    height: 39px,;
+    background: transparent; /* Átlátszó navbar */
+    position: absolute;  /* A navbar legyen a háttérkép felett */
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    z-index: 10; /* A navbar legyen a háttérkép fölött */
+    display: flex;
+      /* Space out the items: one goes left, the other goes right */
+      justify-content: space-between;
+      /* Optionally center vertically */
+      align-items: center;
+      
+  }
+
+  
+
+.logo{
+    height: 80px;
+}
+
+
+
+.first-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    gap: 20px; /* Optional spacing between columns */
+    align-items: center; /* Vertically center content in each cell */
+    padding: 2rem; /* Optional padding around your section */
+    /* You can add a background color, border, etc. if desired */
+    padding-bottom: 0%;
+    display: flex;
+    /* Space out the items: one goes left, the other goes right */
+    justify-content: space-between;
+   
+    
+}
+.first-heading{
+    display: flex;                /* Use Flexbox to center content inside the cell */
+      flex-direction: column;       /* Stack text elements vertically */
+      justify-content: center;      /* Vertically center */
+      align-items: center;          /* Horizontally center */
+      text-align: left;  
+      color: #9e9de9;   
+      font-size: 500%;
+      font-weight: 800;
+}
+
+
+
+.first-pic-container{
+    height: 100vw;
+
+}
+.first-pic{
+   height: 600px; 
+}
+.second-pic, .fourth-pic {
+  width: 70%;  /* Adjust to your desired size */
+  height: auto;  /* Keeps the aspect ratio */
+}
+.third-pic{
+    width: 100% ; 
+ }
+
+.border{
+border-radius: 20px;
+}
+
+section, img {
+    border-radius: 20px;      /* makes corners curved based on 20% of the element’s size */
+}
+.button {
+    border: 1px solid white;
+    background-color:#004738;
+    outline-offset: 0px;
+    color: white;
+    text-align: center;
+    letter-spacing: -.02em;
+    border-radius: 48px;
+    outline: 2px solid #0000;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+    transition: all .2s;
+    display: flex;
+  }
+
+  .button:hover {
+    background-color: black;
+  }
+
+.second-section{
+    background-color: #ff9269;
+    background-image: radial-gradient(circle farthest-corner at 0% 100%, #ff9269, white);
+    padding: 4%;
+    text-align: right;
+
+}
+
+.second-containers-content,
+.fourth-containers-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 2rem; /* Space between columns */
+  align-items: center; /* Align items vertically in the center */
+  /* Space out the items: one goes left, the other goes right */
+  justify-content: space-between;
+  /* Optionally center vertically */
+  
+
+}
+
+.third-section{
+    text-align: center; 
+}
+.fourth-pic{
+   margin-left: 3%;
+}
+
+
+
+
+
+.fourth-section{
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    background-image: radial-gradient(circle farthest-corner at 50% 50%, #266356, white 53%);
+    border: 1px #000;
+    grid-template: "."
+    / 4.25fr 2.75fr;
+    align-items: center;
+    padding: 4%;
+    text-align: left;
+
+}
+
+
+
+/*testiponial section*/
+
+
+  
+  .f-testimonial-slider-regular {
+    display: flex;
+    overflow: hidden;
+  }
+  
+.f-testimonial-author {
+    grid-column-gap: 16px;
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+  }
+  
+  .f-testimonial-author:hover {
+    border-color: #0000;
+    box-shadow: 23px 23px 64px -16px #393b6a0f;
+  }
+  
+  .f-testimonial-avatar-small {
+    background-color: var(--flowui-component-library--black);
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    min-width: 48px;
+    height: 48px;
+    min-height: 48px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .f-section-regular-2 {
+    margin-left: 28px;
+    margin-right: 28px;
+    padding: 72px 5%;
+    position: relative;
+  }
+  
+  .f-text-weight-medium {
+    font-weight: 500;
+  }
+  
+  .f-margin-bottom-48 {
+    margin-bottom: 48px;
+  }
+ 
+  .testimonial-section {
+
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color:#9e9de9;
+    background-image: radial-gradient(circle farthest-corner at 100% 0%, #9e9de9, white);
+  }
+
+  .testimonial-section h3 {
+    margin-bottom: 2rem;
+  }
+
+  /* Each individual testimonial */
+  .testimonial {
+    margin-bottom: 2rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1.5rem;
+    text-align: left; /* Left-align if you prefer a more standard reading layout */
+  }
+
+  .testimonial .stars {
+    margin-bottom: 1rem;
+  }
+
+  /* Star icons: repeated 5 times for a 5-star rating.
+     'fill="currentColor"' means they'll inherit the font color. */
+  .testimonial .stars svg {
+    width: 24px;
+    height: 24px;
+    color: #ff9269; /* Gold star color */
+    margin-right: 2px; /* Tiny spacing between stars */
+  }
+
+  /* The main testimonial text */
+  .testimonial-text {
+    margin: 1rem 0;
+    line-height: 1.5;
+  }
+
+  /* Testimonial author info */
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .testimonial-author img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+
+  .testimonial-author-name {
+    font-weight: bold;
+  }
+
+  .testimonial-author-company {
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .faq-section {
+   
+    margin: 0 auto; /* Center the container */
+  }
+  .faq-content{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+  }
+    
+
+  /* Basic styling for each dropdown item */
+  .f-accordian-dropdown {
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    overflow: hidden; 
+    /* Webflow will animate the dropdown expansion, 
+       but the arrow won't move. */
+  }
+
+  /* Toggle (the clickable area) */
+  .f-accordian-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .f-accordian-title {
+    font-weight: bold;
+  }
+
+  /* Arrow (no rotation, no animation) */
+  .f-accordian-icon svg {
+    width: 24px;
+    height: 24px;
+    color:#004738;
+    /* No transform or transition here, so the arrow stays in place. */
+  }
+
+  /* The content area inside the dropdown */
+  .f-accordian-list {
+    background: #fff;
+    padding: 0 1rem 1rem; /* space around the paragraph */
+  }
+
+  .f-paragraph-small-3 {
+    margin: 1rem 0 0 0;
+    font-weight: normal !important;
+  }
+
+  
