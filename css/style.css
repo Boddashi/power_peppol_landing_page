@@ -23,8 +23,8 @@ p{
     background-repeat: no-repeat;   /* Prevents the image from repeating */
     /* Optional: set a minimum height so the background is visible */
     min-height: 100px;
+    margin: 0px !important;
   }
-
   /* menü */
 .nav-img {
     position: absolute; /* A kép a menü mögött helyezkedik el */
@@ -42,13 +42,13 @@ p{
   .nav-container{
     padding-left: 3%;
     padding-right: 3%;
-    padding-top: 0.7%;
     height: 39px,;
     background: transparent; /* Átlátszó navbar */
     position: absolute;  /* A navbar legyen a háttérkép felett */
     top: 0; 
     left: 0; 
     width: 100%;
+    height: 12%;
     z-index: 10; /* A navbar legyen a háttérkép fölött */
     display: flex;
       /* Space out the items: one goes left, the other goes right */
@@ -114,7 +114,7 @@ border-radius: 20px;
 }
 
 section{
-    margin-bottom: 20px !important;      /* makes corners curved based on 20% of the element’s size */
+    margin-bottom: 60px !important;      
 }
 
 section, img {
@@ -197,7 +197,7 @@ section, img {
     margin: 0 auto;
     padding: 2rem 2rem;
     background-color: #f9f9f9;
-    border-radius: 8px;
+    border-radius: 20px;
     text-align: center;
     position: relative;
     background-color:#9e9de9;
@@ -356,17 +356,36 @@ section, img {
   @media only screen and (max-width: 992px) {
     /* Further reduce font size, images, etc. */
     h1, .second-heading, .third-heading, .fourth-heading {
-      font-size: 150% !important;
+      font-size: 250% !important;
     }
+    .nav-container, .nav-img{
+      height: 10%;
+
+    }
+
+    .first-container,
+    .second-containers-content,
+    .third-container,
+    .fourth-containers-content,
+    .faq-content,
+    .row,
+    .col-md-6 {
+      display: flex !important;        /* ha grid, tedd flexre */
+      flex-direction: column !important;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 100% !important;          /* 100%-os szélesség, egy oszlop */
+      gap: 1rem;                       /* kis függőleges tér */
+    }
+
     .first-heading{
-        font-size:200% !important;
+        font-size:400% !important;
+        text-align: center;
       }
     p, .second-paragraph, .third-paragraph, .fourt-paragraph {
       font-size:120% !important;
     }
-    .nav {
-        margin: 0px;
-      }
+    
     .button {
       font-size: 85% !important;
       padding: 7px 18px !important;
@@ -387,6 +406,13 @@ section, img {
         text-align: left;
     
   }
+  .fourth-pic {
+    margin: 0;
+ }
+ .second-pic, .fourth-pic  {
+  margin-left: 14%;
+}
+}
 
   
   
@@ -400,6 +426,10 @@ section, img {
           font-size: 198% !important;
           
         }
+        .nav-container, .nav-img{
+          height: 8%;
+
+        }
         .first-container {
             padding: 0% !important;
             
@@ -411,16 +441,13 @@ section, img {
           font-size: 75% !important;
         }
        .nav-container{
-        padding-top: 4.5% !important;
         margin-bottom: 0%;
       }
       .logo{
         width: 18% !important;
         
       }
-      .nav-container{
-        padding-top: 2%;
-      }
+      
         .button {
           font-size: 75% !important;
           padding: 5px 14px !important;
@@ -429,9 +456,7 @@ section, img {
           width: 100% !important;
           height: auto !important;
         }
-        .fourth-pic {
-           margin: 0;
-        }
+        
     .first-pic {
             margin-left: 10px;
          }
@@ -454,5 +479,20 @@ section, img {
 
 }
 
-      
+      /* =========================
+     Phones down to 600px
+     ========================= */
+
+     @media only screen and (max-width: 400px) {
+      /* Minimal sizes for the smallest devices */
+      h1, .second-heading, .third-heading, .fourth-heading {
+        font-size: 100% !important;
+      }
+      .second-pic, .fourth-pic  {
+        margin: 0%;
+      }
+
+
 }
+
+    
