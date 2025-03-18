@@ -42,6 +42,7 @@ p{
   .nav-container{
     padding-left: 3%;
     padding-right: 3%;
+    padding-top: 0.7%;
     height: 39px,;
     background: transparent; /* Átlátszó navbar */
     position: absolute;  /* A navbar legyen a háttérkép felett */
@@ -60,7 +61,7 @@ p{
   
 
 .logo{
-    height: 80px;
+    max-height: 80px;
 }
 
 
@@ -100,7 +101,7 @@ p{
 
 }
 .first-pic{
-   height: 600px; 
+   max-height: 600px; 
 }
 .second-pic, .fourth-pic {
   width: 70%;  /* Adjust to your desired size */
@@ -376,6 +377,16 @@ section, img {
       width: 10% !important;
       height: auto !important;
     }
+    .fourth-section{
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        background-image: radial-gradient(circle farthest-corner at 11% 89%, #266356, white 100%);
+        border: 1px #000;
+        grid-template: "."
+        / 4.25fr 2.75fr;
+        align-items: center;
+        padding: 4%;
+        text-align: left;
     
   }
 
@@ -384,7 +395,8 @@ section, img {
   /* =========================
      Phones down to 600px
      ========================= */
-     @media only screen and (max-width: 400px) {
+
+     @media only screen and (max-width: 600px) {
         /* Minimal sizes for the smallest devices */
         .first-heading {
           font-size: 198% !important;
@@ -401,10 +413,14 @@ section, img {
           font-size: 75% !important;
         }
        .nav-container{
-        padding-top: 1px;
+        padding-top: 4.5% !important;
+        margin-bottom: 0%;
       }
       .logo{
-        width: 20% !important;
+        width: 18% !important;
+      }
+      .nav-container{
+        padding-top: 2%;
       }
         .button {
           font-size: 75% !important;
@@ -435,18 +451,9 @@ section, img {
     gap: 1rem;                       /* kis függőleges tér */
   }
 
-  fourth-section{
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-    background-image: radial-gradient(circle farthest-corner at 50% 50%, #266356, white 70%);
-    border: 1px #000;
-    grid-template: "."
-    / 4.25fr 2.75fr;
-    align-items: center;
-    padding: 4%;
-    text-align: left;
+  
 
 }
-       
-      }
+
       
+}
