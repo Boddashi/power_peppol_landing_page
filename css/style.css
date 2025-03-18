@@ -58,8 +58,6 @@ p{
       
   }
 
-  
-
 .logo{
     max-height: 80px;
 }
@@ -418,6 +416,7 @@ section, img {
       }
       .logo{
         width: 18% !important;
+        
       }
       .nav-container{
         padding-top: 2%;
