@@ -349,4 +349,104 @@ section, img {
     font-weight: normal !important;
   }
 
+
   
+  /* =========================
+     Medium screens down to 992px
+     ========================= */
+  @media only screen and (max-width: 992px) {
+    /* Further reduce font size, images, etc. */
+    h1, .second-heading, .third-heading, .fourth-heading {
+      font-size: 150% !important;
+    }
+    .first-heading{
+        font-size:200% !important;
+      }
+    p, .second-paragraph, .third-paragraph, .fourt-paragraph {
+      font-size:120% !important;
+    }
+    .nav {
+        margin: 0px;
+      }
+    .button {
+      font-size: 85% !important;
+      padding: 7px 18px !important;
+    }
+    .logo {
+      width: 10% !important;
+      height: auto !important;
+    }
+    
+  }
+
+  
+  
+  /* =========================
+     Phones down to 600px
+     ========================= */
+     @media only screen and (max-width: 400px) {
+        /* Minimal sizes for the smallest devices */
+        .first-heading {
+          font-size: 198% !important;
+          
+        }
+        .first-container {
+            padding: 0% !important;
+            
+          }
+        h1{
+            font-size: 180% !important;
+          }
+        p, .second-paragraph, .third-paragraph, .fourt-paragraph {
+          font-size: 75% !important;
+        }
+       .nav-container{
+        padding-top: 1px;
+      }
+      .logo{
+        width: 20% !important;
+      }
+        .button {
+          font-size: 75% !important;
+          padding: 5px 14px !important;
+        }
+        .first-pic, .second-pic, .third-pic, .fourth-pic {
+          width: 100% !important;
+          height: auto !important;
+        }
+        .fourth-pic {
+           margin: 0;
+        }
+    .first-pic {
+            margin-left: 10px;
+         }
+        .first-container,
+  .second-containers-content,
+  .third-container,
+  .fourth-containers-content,
+  .faq-content,
+  .row,
+  .col-md-6 {
+    display: flex !important;        /* ha grid, tedd flexre */
+    flex-direction: column !important;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100% !important;          /* 100%-os szélesség, egy oszlop */
+    gap: 1rem;                       /* kis függőleges tér */
+  }
+
+  fourth-section{
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    background-image: radial-gradient(circle farthest-corner at 50% 50%, #266356, white 70%);
+    border: 1px #000;
+    grid-template: "."
+    / 4.25fr 2.75fr;
+    align-items: center;
+    padding: 4%;
+    text-align: left;
+
+}
+       
+      }
+      
