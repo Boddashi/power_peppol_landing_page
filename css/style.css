@@ -474,6 +474,10 @@ section, img {
     width: 100% !important;          /* 100%-os szélesség, egy oszlop */
     gap: 1rem;                       /* kis függőleges tér */
   }
+  .second-pic, .fourth-pic  {
+    margin: 0%;
+  }
+
 
   
 
@@ -488,9 +492,7 @@ section, img {
       h1, .second-heading, .third-heading, .fourth-heading {
         font-size: 100% !important;
       }
-      .second-pic, .fourth-pic  {
-        margin: 0%;
-      }
+     
 
 
 }
