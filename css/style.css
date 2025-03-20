@@ -103,7 +103,7 @@ p{
    z-index: -10;
    position: relative;
 }
-}
+
 .second-pic, .fourth-pic {
   width: 70%;  /* Adjust to your desired size */
   height: auto;  /* Keeps the aspect ratio */
